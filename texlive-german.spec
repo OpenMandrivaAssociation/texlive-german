@@ -1,3 +1,9 @@
+# revision 17039
+# category Package
+# catalog-ctan /language/german
+# catalog-date 2009-09-26 12:32:55 +0200
+# catalog-license lppl
+# catalog-version 2.5e
 Name:		texlive-german
 Version:	2.5e
 Release:	1
@@ -48,6 +54,7 @@ Rechtschreibung).
 #- source
 %doc %{_texmfdistdir}/source/generic/german/german.dtx
 %doc %{_texmfdistdir}/source/generic/german/german.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ Rechtschreibung).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
