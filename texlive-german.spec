@@ -1,12 +1,12 @@
-# revision 17039
+# revision 30567
 # category Package
 # catalog-ctan /language/german
-# catalog-date 2009-09-26 12:32:55 +0200
+# catalog-date 2012-06-19 20:29:15 +0200
 # catalog-license lppl
 # catalog-version 2.5e
 Name:		texlive-german
 Version:	2.5e
-Release:	2
+Release:	3
 Summary:	Support for German typography
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/german
@@ -54,17 +54,3 @@ Rechtschreibung).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.5e-2
-+ Revision: 752261
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.5e-1
-+ Revision: 718537
-- texlive-german
-- texlive-german
-- texlive-german
-- texlive-german
-
