@@ -6,7 +6,7 @@
 # catalog-version 2.5e
 Name:		texlive-german
 Version:	2.5e
-Release:	9
+Release:	10
 Summary:	Support for German typography
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/german
