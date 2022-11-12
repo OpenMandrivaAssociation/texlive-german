@@ -1,19 +1,13 @@
-# revision 30567
-# category Package
-# catalog-ctan /language/german
-# catalog-date 2012-06-19 20:29:15 +0200
-# catalog-license lppl
-# catalog-version 2.5e
 Name:		texlive-german
-Version:	2.5e
-Release:	12
+Version:	42428
+Release:	1
 Summary:	Support for German typography
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/german
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ Supports the new German orthography (neue deutsche
 Rechtschreibung).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,7 +41,8 @@ Rechtschreibung).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
