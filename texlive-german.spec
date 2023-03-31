@@ -1,6 +1,6 @@
 Name:		texlive-german
 Version:	42428
-Release:	1
+Release:	2
 Summary:	Support for German typography
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/language/german
