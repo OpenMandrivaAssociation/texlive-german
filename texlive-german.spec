@@ -3,7 +3,7 @@ Version:	42428
 Release:	2
 Summary:	Support for German typography
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/language/german
+URL:		https://www.ctan.org/tex-archive/language/german
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/german.doc.r%{version}.tar.xz
